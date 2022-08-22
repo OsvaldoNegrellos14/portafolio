@@ -1,0 +1,92 @@
+@import '../../index.scss';
+
+.nav__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: justify;
+  position: fixed;
+  height: 100vh;
+  width: 105px;
+  background-color: $azul_primario;
+  z-index: 10;
+  transition: 300ms ease-in;
+
+  .logo {
+    background-color: $azul_secundario;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0%;
+    padding: 30px 15px;
+    text-align: center;
+    color: $blanco_primario;
+  }
+
+  .list-options {
+    padding: 26px;
+    display: block;
+
+    .navbar {
+      list-style: none;
+      margin: 0%;
+      padding: 0%;
+      vertical-align: baseline;
+    }
+
+    .navItem {
+      padding: 13px 17px;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      border-radius: 6px;
+      position: relative;
+      color: $blanco_primario;
+      transition-duration: 0.25s;
+      width: 100%;
+      width: -moz-available;
+      width: -webkit-fill-available;
+
+      &:hover {
+        background-color: $azul_claro;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .navItemName {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+    position: absolute;
+    left: 55px;
+    top: 18px;
+    transition-delay: 0.1s;
+    display: none;
+    color: $blanco_primario;
+  }
+
+  .scrollDown {
+    left: 35px;
+    position: relative;
+    height: 50px;
+    width: fit-content;
+
+    .navItemName {
+      left: 40px;
+      top: -10px;
+    }
+  }
+
+  &:hover {
+    transition: 300ms ease-in;
+    width: 220px;
+
+    .navItemName {
+      display: block;
+    }
+  }
+}

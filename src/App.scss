@@ -1,0 +1,29 @@
+// $azul_primario: #0069c0;
+// $azul_secundario: #2196f3;
+// $azul_claro: #97e9ff;
+// $morado_primario: #7f00b2;
+// $morado_secundario: #ab3ed8;
+
+@import 'index.scss';
+
+.App {
+  display: flex;
+}
+
+.outerWrapper {
+  width: calc(100% - 90px);
+  margin-left: 90px;
+  overflow: hidden;
+}
+
+.innerWrapper {
+  padding: 0 33px;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 1074px;
+}
+
+.title {
+  font-size: large;
+  color: $azul_primario;
+}
