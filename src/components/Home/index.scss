@@ -1,0 +1,83 @@
+@import '../../index.scss';
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0px 15px;
+  flex-direction: row-reverse;
+
+  .headerText {
+    width: 60%;
+
+    .greeting {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin: 24px 0;
+      
+      span {
+        color: $azul_primario;
+      }
+    }
+
+    .smallbio {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #5F6F81;
+
+      span {
+        color: $azul_primario;
+      }
+    }
+
+    .socialsResume {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+
+      .cvLink {
+        color: $blanco_primario;
+        cursor: pointer;
+        padding: 15px 35px;
+        background-color: $azul_primario;
+        border-radius: 40px;
+        text-decoration: none;
+        transition: 400ms;
+
+        &:hover {
+          transition: 400ms;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .socialList {
+        list-style: none;
+        display: flex;
+        margin: 0px 0px 0px 50px;
+        padding: 0%;
+
+        li {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+    
+  }
+}
